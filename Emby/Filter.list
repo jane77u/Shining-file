@@ -1,9 +1,10 @@
 # NAME: Emby
 # UPDATE: 2020-12-11
-# DOMAIN-SUFFIX: 4
-# TOTAL: 4
+# DOMAIN-SUFFIX: 6
+# TOTAL: 6
 DOMAIN-SUFFIX,emby.wtf,Emby
 DOMAIN-SUFFIX,plusmedia.site,Emby
 DOMAIN-SUFFIX,seebast.site,Emby
 DOMAIN-SUFFIX,mickeycloud.com,Emby
 DOMAIN-SUFFIX,jmsooo.com,Emby
+DOMAIN-SUFFIX,dynv6.net,Emby
