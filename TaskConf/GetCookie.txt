@@ -1,4 +1,4 @@
-hostname =qmyd.yichengw.cn, *.rr.tv, *.video.qq.com, daojia.jd.com, tieba.baidu.com, as.xiaojukeji.com, common.diditaxi.com.cn, account.huami.com, api.m.jd.com, api.weibo.cn, kd.youth.cn, ios.baertt.com, bububao.duoshoutuan.com, api.sxsjyzm.com, ymz.iphonezhuan.com, github.com, yuedongzu.yichengw.cn, veishop.iboxpay.com, huodong.fanli.com, passport.fanli.com, gw.fanli.com,
+hostname = qmyd.yichengw.cn, *.rr.tv, *.video.qq.com, daojia.jd.com, tieba.baidu.com, as.xiaojukeji.com, common.diditaxi.com.cn, account.huami.com, api.m.jd.com, api.weibo.cn, kd.youth.cn, ios.baertt.com, bububao.duoshoutuan.com, api.sxsjyzm.com, ymz.iphonezhuan.com, github.com, yuedongzu.yichengw.cn, veishop.iboxpay.com, huodong.fanli.com, passport.fanli.com, gw.fanli.com,
 
 ##Ziye
 #返利网获取header
