@@ -18,7 +18,9 @@ https:\/\/qmyd\.yichengw\.cn\/* url script-request-header https://raw.githubuser
 
 ##age174
 #羊毛赚
-^http://ymz.iphonezhuan.com/addaction url script-request-body https://raw.githubusercontent.com/age174/-/main/ymz.js
+
+#羊毛赚
+^http://ymz.iphonezhuan.com/ url script-request-body https://raw.githubusercontent.com/age174/-/main/ymz.js
 #芝麻视频
 ^https://api.sxsjyzm.com/api2/loot/index url script-request-body https://raw.githubusercontent.com/age174/-/main/zmsp.js
 
