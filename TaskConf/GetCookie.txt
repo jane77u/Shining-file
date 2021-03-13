@@ -15,10 +15,10 @@ https:\/\/github\.com\/* url script-request-body https://raw.githubusercontent.c
 https:\/\/bububao\.duoshoutuan\.com\/user\/* url script-request-header https://raw.githubusercontent.com/6Svip120apk69/gitee_q8qsTAUA_cThxc1RBVUE/main/Task/bububao.js
 #全民悦动获取TOKEN
 https:\/\/qmyd\.yichengw\.cn\/* url script-request-header https://raw.githubusercontent.com/6Svip120apk69/gitee_q8qsTAUA_cThxc1RBVUE/main/Task/qmyd.js
+#芝嫲视频获取body
+https:\/\/api\.sxsjyzm\.com\/* url script-request-body https://raw.githubusercontent.com/6Svip120apk69/gitee_q8qsTAUA_cThxc1RBVUE/main/Task/zhima.js
 
 ##age174
-#芝麻视频
-^https://api.sxsjyzm.com/api2/loot/index url script-request-body https://raw.githubusercontent.com/age174/-/main/zmsp.js
 
 ##Sunert
 #百度极速版
