@@ -9,4 +9,4 @@ DOMAIN-SUFFIX,mickeycloud.com,Emby
 DOMAIN-SUFFIX,jmsooo.com,Emby
 DOMAIN-SUFFIX,dynv6.net,Emby
 IP-CIDR,38.94.109.97/32,no-resolve
-IP-CIDR,213.173.33.211,no-resolve
+IP-CIDR,213.173.33.211
