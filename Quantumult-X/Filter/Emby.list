@@ -1,8 +1,9 @@
-# Emby
-DOMAIN-SUFFIX,emby.wtf
-DOMAIN-SUFFIX,plusmedia.site
-DOMAIN-SUFFIX,seebast.site
-DOMAIN-SUFFIX,mickeycloud.com
-DOMAIN-SUFFIX,jmsooo.com
-DOMAIN-SUFFIX,dynv6.net
-IP-CIDR,38.94.109.97/32,no-resolve
+ip-cidr, 38.94.109.97/32, 𝐄𝐦𝐛𝐲
+host-suffix, plusmedia.site, 𝐄𝐦𝐛𝐲
+host-suffix, mickeycloud.com, 𝐄𝐦𝐛𝐲
+host-suffix, mb3admin.com, 𝐄𝐦𝐛𝐲
+host-suffix, emby.wtf, 𝐄𝐦𝐛𝐲
+host-suffix, seebast.site, 𝐄𝐦𝐛𝐲
+host-suffix, jmsooo.com, 𝐄𝐦𝐛𝐲
+host-suffix, dynv6.net, 𝐄𝐦𝐛𝐲
+host-keyword, emby, 𝐄𝐦𝐛𝐲
