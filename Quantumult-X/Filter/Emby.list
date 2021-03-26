@@ -1,0 +1,9 @@
+# Emby
+DOMAIN-KEYWORD,emby
+DOMAIN-SUFFIX,emby.wtf
+DOMAIN-SUFFIX,plusmedia.site
+DOMAIN-SUFFIX,seebast.site
+DOMAIN-SUFFIX,mickeycloud.com
+DOMAIN-SUFFIX,jmsooo.com
+DOMAIN-SUFFIX,dynv6.net
+IP-CIDR,38.94.109.97/32,no-resolve
