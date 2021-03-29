@@ -1,5 +1,5 @@
 ip-cidr,38.94.109.97/32,Emby
-ip-cidr,18.167.36.124,Emby
+ip-cidr,18.167.36.124/,Emby
 host-suffix,plusmedia.site,Emby
 host-suffix,mickeycloud.com,Emby
 host-suffix,mb3admin.com,Emby
