@@ -1,4 +1,4 @@
-hostname = qmyd.yichengw.cn, *.rr.tv, *.video.qq.com, daojia.jd.com, haokan.baidu.com, tieba.baidu.com, as.xiaojukeji.com, common.diditaxi.com.cn, account.huami.com, api.m.jd.com, api.weibo.cn, kd.youth.cn, ios.baertt.com, bububao.duoshoutuan.com, api.sxsjyzm.com, ymz.iphonezhuan.com, github.com, yuedongzu.yichengw.cn, veishop.iboxpay.com, *.fanli.com, render.shuqireader.com, ocean.shuqireader.com, jcollection.shuqireader.com, activity-center-web.shuqireader.com,
+hostname = wq.jd.com, m.jingxi.com, qmyd.yichengw.cn, *.rr.tv, *.video.qq.com, daojia.jd.com, haokan.baidu.com, tieba.baidu.com, as.xiaojukeji.com, common.diditaxi.com.cn, account.huami.com, api.m.jd.com, api.weibo.cn, kd.youth.cn, ios.baertt.com, bububao.duoshoutuan.com, api.sxsjyzm.com, ymz.iphonezhuan.com, github.com, yuedongzu.yichengw.cn, veishop.iboxpay.com, *.fanli.com, render.shuqireader.com, ocean.shuqireader.com, jcollection.shuqireader.com, activity-center-web.shuqireader.com,
 
 ##Ziye
 #返利网获取header
@@ -76,3 +76,7 @@ https:\/\/api\.m\.jd\.com\/client\.action.*functionId=signBean url script-reques
 #rrtv
 ^https:\/\/api\.rr\.tv\/user\/profile url script-request-header https://raw.githubusercontent.com/chavyleung/scripts/master/rrtv/rrtv.cookie.js
 
+##惊喜农场
+^https\:\/\/wq\.jd\.com\/cubeactive\/farm\/dotask url script-request-header https://raw.githubusercontent.com/whyour/hundun/master/quanx/jx_tokens.js
+^https\:\/\/m\.jingxi\.com\/dreamfactory\/generator\/CollectCurrentElectricity url script-request-header https://raw.githubusercontent.com/whyour/hundun/master/quanx/jx_tokens.js
+^https\:\/\/m\.jingxi\.com\/jxcfd\/consume\/CashOut url script-request-header https://raw.githubusercontent.com/whyour/hundun/master/quanx/jx_tokens.js
