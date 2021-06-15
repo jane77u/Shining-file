@@ -63,7 +63,7 @@ https:\/\/api\.m\.jd\.com\/client\.action.*functionId=signBean url script-reques
 
 ##lxk
 #小米运动获取Token
-^https:\/\/account\.huami\.com\/v2\/client\/login url script-response-body https://jdsharedresourcescdn.azureedge.net/jdresource/xmSports.js
+^https:\/\/account\.huami\.com\/v2\/client\/login url script-response-body https://raw.githubusercontent.com/Jane-10u/Shining-file/main/Scripts/smSport.js
 
 ##zZPiglet
 #滴滴出行APP
