@@ -1,75 +1,60 @@
-const axios = require('axios').default
+/*
+[URL Rewrite]
+^https://aweme-eagle(.*)\.snssdk\.com/aweme/v2/ https://aweme-eagle$1.snssdk.com/aweme/v1/ 302
 
-function get(url, params, headers) {
-  return axios.get(url, { params, headers: { ...headers } })
-}
+[Script]
+http-response ^https://[\s\S]*\/aweme/v1/(feed|aweme/post|follow/feed)/ requires-body=1,max-size=-1,script-path=https://Choler.github.io/Surge/Script/Aweme.js
 
-function videoUrl(i) {
-  try {
-    return i.video.play_addr.url_list[0].replace('v1/play/', 'v1/playwm/')
-  } catch (error) {
-    return ''
-  }
-}
+[MITM]
+hostname = *.amemv.com, *.snssdk.com
+*/
 
-function coverUrl(i) {
-  try {
-    return i.video.origin_cover.url_list[0]
-  } catch (error) {
-    return ''
-  }
-}
-
-function transformPost(i) {
-  return {
-    id: i.aweme_id,
-    title: i.desc,
-    videoUrl: videoUrl(i),
-    coverUrl: coverUrl(i),
-    duration: i.video.duration,
-    praiseCount: i.statistics.digg_count,
-    commentCount: i.statistics.comment_count,
-  }
-}
-
-exports.postsByUser = async (
-  { uid, signature, count, cursor = 0 },
-  { headers }
-) => {
-  const { data } = await get(
-    'https://www.iesdouyin.com/web/api/v2/aweme/post/',
-    {
-      user_id: uid,
-      count,
-      max_cursor: cursor,
-      _signature: signature,
-    },
-    headers
-  )
-
-  return {
-    list: data.aweme_list.map((i) => ({
-      ...transformPost(i),
-      authorId: i.author.uid,
-      praiseCount: i.statistics.digg_count,
-      commentCount: i.statistics.comment_count,
-    })),
-    cursor: data.max_cursor,
-    isEnded: !data.has_more,
-  }
-}
-
-/**
- * @param {string[]} ids
- * @returns {Promise<*>}
- */
-exports.postsByIds = async (ids) => {
-  const { data } = await get(
-    'https://www.iesdouyin.com/web/api/v2/aweme/iteminfo/',
-    {
-      item_ids: ids.join(','),
+let arr = {
+  "allow_download": true,
+  "share_type": 0,
+  "show_progress_bar": 0,
+  "draft_progress_bar": 0,
+  "allow_duet": true,
+  "allow_react": true,
+  "prevent_download_type": 2,
+  "allow_dynamic_wallpaper": false
+};
+let body = $response.body.replace(/watermark=1/g, "watermark=0");
+var obj = JSON.parse(body);
+if (obj.aweme_list) {
+  for (var i = obj.aweme_list.length - 1; i >= 0; i--) {
+    if (obj.aweme_list[i].raw_ad_data) {
+      obj.aweme_list.splice(i, 1);
     }
-  )
-
-  return data.item_list.map(transformPost)
+    if (obj.aweme_list[i].poi_info) {
+      delete obj.aweme_list[i].poi_info;
+    }
+    if (obj.aweme_list[i].sticker_detail) {
+      delete obj.aweme_list[i].sticker_detail;
+    }
+    if (obj.aweme_list[i].simple_promotions) {
+      delete obj.aweme_list[i].simple_promotions;
+    }
+    obj.aweme_list[i].status.reviewed = 1;
+    obj.aweme_list[i].video_control = arr;
+  }
+  $done({body: JSON.stringify(obj)});
+} else if (obj.data) {
+  for (var i = obj.data.length - 1; i >= 0; i--) {
+    if (obj.data[i].aweme) {
+      if (obj.data[i].aweme.poi_info) {
+        delete obj.data[i].aweme.poi_info;
+      }
+      if (obj.data[i].aweme.simple_promotions) {
+        delete obj.data[i].aweme.simple_promotions;
+      }
+      obj.data[i].aweme.status.reviewed = 1;
+      obj.data[i].aweme.video_control = arr;
+    } else {
+      obj.data.splice(i, 1);
+    }
+  }
+  $done({body: JSON.stringify(obj)});
+} else {
+  $done({body});
 }
