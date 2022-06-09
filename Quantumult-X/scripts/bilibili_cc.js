@@ -1,4 +1,5 @@
 /***********************************
+
 > 應用名稱：哔哩哔哩
 > 軟件版本：6.66.0
 > 下載地址：https://apps.apple.com/cn/app/id736536022
@@ -11,10 +12,14 @@
 > 特别說明：本腳本僅供學習交流使用，禁止轉載售賣
  
 [rewrite_local]
+
 # ～ 嗶哩嗶哩繁體CC字幕轉中文簡體（2022-04-02）@ddgksf2013
 ^https?:\/\/i.\.hdslb\.com\/bfs\/subtitle\/.+\.json$ url script-response-body https://raw.githubusercontent.com/ddgksf2013/Cuttlefish/master/Script/bilibili_cc.js
+
 [mitm]
+
 hostname=*.hdslb.com
+
 ***********************************/
 
 var cuttlefish ={"warning":"本腳本僅供學習交流使用，禁止轉載售賣","tgchannel":"https://t.me/ddgksf2021","feedback":"ddgksf2013@163.com"};
