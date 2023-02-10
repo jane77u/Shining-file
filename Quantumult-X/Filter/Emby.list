@@ -1,4 +1,5 @@
 ip-cidr,38.94.109.97/32,Emby
+host-keyword,emby,Emby
 host-suffix,plusmedia.site,Emby
 host-suffix,mickeycloud.com,Emby
 host-suffix,mb3admin.com,Emby
@@ -6,4 +7,4 @@ host-suffix,emby.wtf,Emby
 host-suffix,seebast.site,Emby
 host-suffix,jmsooo.com,Emby
 host-suffix,dynv6.net,Emby
-host-keyword,emby,Emby
+host-suffix,misakaf.org,Emby
