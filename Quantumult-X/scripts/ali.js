@@ -17,7 +17,7 @@
 
 [rewrite_local]
 
-^https?:\/\/.*\.example\.com url script-analyze-echo-response https://github.com/ddgksf2013/Scripts/raw/master/ali.js
+^https?:\/\/.*\.example\.com url script-analyze-echo-response https://raw.githubusercontent.com/jane77u/Shining-file/main/Quantumult-X/scripts/ali.js
 
 [mitm]
 
