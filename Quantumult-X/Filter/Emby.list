@@ -1,6 +1,7 @@
 ip-cidr,38.94.109.97/32,Emby
 ip-cidr,202.61.255.248/24,Emby
 host-keyword,emby,Emby
+host-keyword,studyfun,Emby
 host-suffix,plusmedia.site,Emby
 host-suffix,mickeycloud.com,Emby
 host-suffix,mb3admin.com,Emby
@@ -13,4 +14,3 @@ host-suffix,misty.ltd,Emby
 host-suffix,emby.ednovas.org,Emby
 host-suffix,bsem.ddns.me,Emby
 host-suffix,s2.amazing910.top,Emby
-host-suffix,studyfun.live:443,Emby 
